@@ -1,21 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #container {
-	position: relative;
-	top: 30px;
-	outline:2px solid #000;
-	font-size: 0;
-	margin:auto;
-	height:960px;
-	width:960px;
-	padding: 0;
-	border: none;
+    position: relative;
+    top: 30px;
+    outline: 2px solid #000;
+    font-size: 0;
+    margin: auto;
+    height: 960px;
+    width: 960px;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
 }
-#button{
-    align-items: center;
-}
+
 .grid {
-	margin:0;
-	padding:0;
-	border:none;
-	outline:1px solid #000;
-	display:inline-block;
+    box-sizing: border-box;
+    width: calc(100% / var(--numOfSquares));
+    height: calc(100% / var(--numOfSquares));
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 1px solid #000;
+    display: inline-block;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.grid:hover {
+    background-color: black;
 }
